@@ -12,6 +12,4 @@ public interface ColaboradorRepository {
 	Colaborador findByEmail(String value);
 
 	List<Colaborador> findBySetor(Integer value);
-
-	Setor findSetor(Integer id);
 }

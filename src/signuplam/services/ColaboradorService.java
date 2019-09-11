@@ -5,7 +5,6 @@ import java.util.List;
 
 import signuplam.exception.NegocioException;
 import signuplam.model.Colaborador;
-import signuplam.model.Setor;
 import signuplam.model.Vinculo;
 import signuplam.repository.ColaboradorRepository;
 
@@ -47,12 +46,11 @@ public class ColaboradorService {
 		return true;
 	}
 
-	public Setor findSetor(Integer id) {
-		return this.repository.findSetor(id);
-	}
-
 	public Colaborador findByCPF(String cpf) {
 		return this.repository.findByCPF(cpf);
-
+	}
+	
+	public Colaborador findByEmail(String email) {
+		return this.repository.findByEmail(email);
 	}
 }
